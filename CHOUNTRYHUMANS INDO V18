@@ -1,0 +1,20 @@
+# 🇮🇩 Arfa Gaza Termux V18 (CH Indonesia Edition)
+
+Custom tampilan Termux premium edisi **Countryhumans Indonesia (Peci & Smirk Style)** v18.9.0 yang gahar, ringan, dan anti-delay. Dikembangkan eksklusif oleh **Arfa Store**.
+
+## ✨ Fitur Utama
+* 🎭 **Eksklusif ASCII Maskot:** CH Indonesia Peci Version yang cool dan sesuai foto karakter asli.
+* ⚡ **Anti-Delay Engine:** Optimasi sistem terminal yang cepat, stabil, dan responsif.
+* 📊 **Live System Monitor:** Menampilkan info perangkat, sisa RAM, waktu, dan tanggal secara real-time.
+* 🛠️ **Built-in Shortcut:** Alias menu otomatis (`menu`, `cls`, `update`, `fix`) untuk mempermudah eksekusi tools.
+
+## 🚀 Cara Pemasangan
+Buka Termux kamu, lalu jalankan perintah berikut secara berurutan:
+
+```bash
+pkg install git -y
+git clone [https://github.com/arfatih1107-netizen/Arfa-Gaza-Termux-V18](https://github.com/arfatih1107-netizen/Arfa-Gaza-Termux-V18)
+cd Arfa-Gaza-Termux-V18
+chmod +x ch-indonesia.sh
+cat ch-indonesia.sh >> ~/.bashrc
+source ~/.bashrc
