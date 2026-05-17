@@ -1,0 +1,93 @@
+# =========================================================
+# INITIAL PACK: TOP 20 NEOFETCH DISTROS (SUPER RAPI STYLE)
+# =========================================================
+
+RESET="\033[0m"
+BOLD="\033[1m"
+
+USER_NAME="Arfa" 
+HOST_NAME="Localhost"
+
+clear
+# --- KREDIT SKRIP & HAK CIPTA (AUTHOR CREDITS) ---
+echo -e "\033[38;5;204m======================================================"
+echo -e " ${BOLD}© 2026 Arfa ardiano Al Fatih${RESET}"
+echo -e "\033[38;5;242m Akun YouTube    : \033[38;5;75mhttps://youtube.com/@arfaalfatih-i4k?si=HsHxU9cPBZcBd8Af"
+echo -e "\033[38;5;242m Instagram Akun : \033[38;5;213mhttps://www.instagram.com/arfa91527?igsh=d293MGJjYnExODd0"
+echo -e "\033[38;5;204m=======================================================${RESET}"
+
+# --- TEKS PERKENALAN DAN AJAKAN (PAS DI LAYAR HP) ---
+echo -e "\033[38;5;121mHalo pengguna perkenalkan nama saya"
+echo -e "Arfa ardiano Al Fatih umur saya 13 tahun"
+echo -e "dan saya bersekolah di Mts Al Huda bogo Nganjuk"
+echo -e "jangan lupa ya subs dan follow akun youtube"
+echo -e "dan Instagram nya jangan lupa like/share komen"
+echo -e "dan subscribe dan jangan lupa follow like komen"
+echo -e "dan share ke teman2 kalian buat nyobain"
+echo -e "script saya \033[38;5;226m😁${RESET}"
+echo -e "\033[38;5;204m=======================================================${RESET}"
+
+echo -e "\033[38;5;110m          ${BOLD}INITIAL PACK: TOP 20 DISTROS${RESET}"
+echo -e "\033[38;5;110m-------------------------------------------------------${RESET}"
+
+# Menu 2 Kolom Vertikal (Dikerucutkan biar muat di font gede & layar sempit)
+echo -e " [1] Kali Linux         [2] Tux Pinguin"
+echo -e " [3] Arch Linux         [4] Ubuntu"
+echo -e " [5] Windows            [6] Android"
+echo -e " [7] Debian             [8] Fedora"
+echo -e " [9] Linux Mint         [10] RedHat"
+echo -e " [11] CentOS            [12] Gentoo"
+echo -e " [13] Slackware         [14] Alpine"
+echo -e " [15] FreeBSD           [16] Manjaro"
+echo -e " [17] Pop!_OS           [18] Zorin OS"
+echo -e " [19] BlackArch         [20] Parrot OS"
+echo -e "\033[38;5;240m-------------------------------------------------------${RESET}"
+echo -n "Pilih nomor logo distro lo (1-20): "
+read PILIH
+
+clear
+
+# Mapping Kunci Mati 20 Distro Utama
+case $PILIH in
+    1) DN="kali" ;;
+    2) DN="tux" ;;
+    3) DN="arch" ;;
+    4) DN="ubuntu" ;;
+    5) DN="windows" ;;
+    6) DN="android" ;;
+    7) DN="debian" ;;
+    8) DN="fedora" ;;
+    9) DN="mint" ;;
+    10) DN="redhat" ;;
+    11) DN="centos" ;;
+    12) DN="gentoo" ;;
+    13) DN="slackware" ;;
+    14) DN="alpine" ;;
+    15) DN="freebsd" ;;
+    16) DN="manjaro" ;;
+    17) DN="popos" ;;
+    18) DN="zorin" ;;
+    19) DN="blackarch" ;;
+    20) DN="parrot" ;;
+    *) DN="kali" ;;
+esac
+
+# 1. Cetak Neofetch Kiri-Kanan 
+NEO_CONFIG="--disable shell resolution DE WM WM_Theme Theme Icons Terminal CPU GPU Memory Disk"
+neofetch --ascii_distro "$DN" $NEO_CONFIG
+
+# 2. Teks Sambutan & Jam Update Dinamis
+CURRENT_DATE=$(date +"%A, %d %B %Y")
+CURRENT_TIME=$(date +"%H:%M:%S")
+
+echo ""
+echo -e "\033[38;5;81m-------------------------------------------------------"
+echo -e "${BOLD}\033[38;5;255mHalo, selamat datang di terminal Arfa Ardiano Al-Fatih!${RESET}"
+echo -e "\033[38;5;112mSistem siap digunakan, bro...${RESET}"
+echo -e "\033[38;5;81m-------------------------------------------------------${RESET}"
+echo -e "\033[38;5;33mDate  : \033[38;5;253m$CURRENT_DATE${RESET}"
+echo -e "\033[38;5;33mTime  : \033[38;5;253m$CURRENT_TIME${RESET}"
+echo ""
+
+# 3. Kursor Prompt Input
+PS1="\033[38;5;33m╭─(\033[38;5;81m${USER_NAME}\033[38;5;253m@\033[38;5;33m${HOST_NAME}\033[38;5;33m)--~\n╰─\033[38;5;81m>>>> \033[0m"
